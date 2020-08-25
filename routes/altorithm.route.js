@@ -5,7 +5,7 @@ router.post('/test001', (req, res) => {
 
     let samples = req.body;
 
-    const soluition = (str) => {
+    const solution = (str) => {
         var answer = true;
 
         // logic
@@ -14,7 +14,7 @@ router.post('/test001', (req, res) => {
     };
 
     const result = samples.map( (testcase) => {
-        testcase.output = soluition(testcase.input);
+        testcase.output = solution(testcase.input);
         return testcase;
     });
 
@@ -25,7 +25,7 @@ router.post('/test002', (req, res) => {
 
     let samples = req.body;
 
-    const soluition = (str) => {
+    const solution = (str) => {
         var answer = [];
     
         // logic
@@ -34,7 +34,7 @@ router.post('/test002', (req, res) => {
     };
 
     const result = samples.map( (testcase) => {
-        testcase.output = soluition(testcase.input);
+        testcase.output = solution(testcase.input);
         return testcase;
     });
 
@@ -45,7 +45,7 @@ router.post('/test003', (req, res) => {
 
     let samples = req.body;
 
-    const soluition = (m, tree) => {
+    const solution = (m, tree) => {
         var answer = "";
     
         // logic
@@ -54,7 +54,7 @@ router.post('/test003', (req, res) => {
     };
 
     const result = samples.map( (testcase) => {
-        testcase.output = soluition(testcase.m, testcase.tree.sort());
+        testcase.output = solution(testcase.m, testcase.tree.sort());
         return testcase;
     });
 
@@ -65,7 +65,7 @@ router.post('/test004', (req, res) => {
 
     let samples = req.body;
 
-    const soluition = (n, budget, m) => {
+    const solution = (n, budget, m) => {
         var answer = 0;
 
        // logic
@@ -74,7 +74,7 @@ router.post('/test004', (req, res) => {
     };
 
     const result = samples.map( (testcase) => {
-        testcase.output = soluition(testcase.n, testcase.budget, testcase.m);
+        testcase.output = solution(testcase.n, testcase.budget, testcase.m);
         return testcase;
     });
 
@@ -85,7 +85,7 @@ router.post('/test005', (req, res) => {
     
     let samples = req.body;
 
-    const soluition = (n, times) => {
+    const solution = (n, times) => {
         var answer = 0;
     
         // logic
@@ -94,7 +94,7 @@ router.post('/test005', (req, res) => {
     };
 
     const result = samples.map( (testcase) => {
-        testcase.output = soluition(testcase.n, testcase.times);
+        testcase.output = solution(testcase.n, testcase.times);
         return testcase;
     });
 
